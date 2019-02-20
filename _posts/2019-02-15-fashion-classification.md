@@ -9,7 +9,7 @@ background: '/assets/img/fashion.png'
 
 I have been working with Tensorflow during last months and I realized that, although there is a large number of Github repositories with many different and complex models, is hard to find a simple example that shows you how to obtain your own dataset from the web and apply some Deep Learning on it.
 
-In this post I pretended to provide an example of this task but being keeping it as simple as possible. I will show you how to **obtain online unlabeled data**, how to create a **simple convolutional network**, train it with some supervised data and use it later to** classify the data** we have gathered from the web.
+In this post I pretended to provide an example of this task but being keeping it as simple as possible. I will show you how to **obtain online unlabeled data**, how to create a **simple convolutional network**, train it with some supervised data and use it later to **classify the data** we have gathered from the web.
 
 All code can be found on my [Github account](https://github.com/mmeendez8/garment-classifier)
 

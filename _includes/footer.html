@@ -7,6 +7,7 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <ul class="list-inline text-center">
+          {% if site.twitter_username %}
           <li class="list-inline-item">
             <a href="https://www.twitter.com/{{ site.twitter_username }}">
               <span class="fa-stack fa-lg">
@@ -15,7 +16,8 @@
               </span>
             </a>
           </li>
-
+          {% endif %}
+          {% if site.facebook_username %}
           <li class="list-inline-item">
             <a href="https://www.facebook.com/{{ site.facebook_username }}">
               <span class="fa-stack fa-lg">
@@ -24,7 +26,8 @@
               </span>
             </a>
           </li>
-
+          {% endif %}
+          {% if site.linkedin_username %}
           <li class="list-inline-item">
             <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
               <span class="fa-stack fa-lg">
@@ -33,7 +36,8 @@
               </span>
             </a>
           </li>
-
+          {% endif %}
+          {% if site.github_username %}
           <li class="list-inline-item">
             <a href="https://github.com/{{ site.github_username }}">
               <span class="fa-stack fa-lg">
@@ -42,7 +46,8 @@
               </span>
             </a>
           </li>
-
+          {% endif %}
+          {% if site.medium_username %}
           <li class="list-inline-item">
             <a href="https://medium.com/@{{ site.medium_username }}">
               <span class="fa-stack fa-lg">
@@ -51,7 +56,8 @@
               </span>
             </a>
           </li>
-
+          {% endif %}
+          {% if site.stack_username %}
           <li class="list-inline-item">
             <a href="https://stackoverflow.com/users/{{ site.stack_username }}">
               <span class="fa-stack fa-lg">
@@ -60,7 +66,8 @@
               </span>
             </a>
           </li>
-
+          {% endif %}
+          {% if site.email %}
           <li class="list-inline-item">
             <a href="mailto:mmeendez@gmail.com?" target="_blank">
               <span class="fa-stack fa-lg">
@@ -69,6 +76,7 @@
               </span>
             </a>
           </li>
+          {% endif %}
         </ul>
         <p class="copyright text-muted">Copyright &copy; {{ site.author }} {{ 'now' | date: "%Y" }}</p>
       </div>
